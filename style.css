@@ -61,19 +61,20 @@ body {
 .textContainer {
     display: flex;
     flex-direction: column;
-    flex: 1.26;
+    flex: 1.30;
     background: rgb(248, 248, 248);
     font-size: 20px;
 }
 
 .text1 {
-    margin: 20px;
+    margin: 25px;
     margin-top: auto;
-    width: 80%;
+    max-width: 60%;
+    padding-top: 25px;
 }
 
 .text2 {
-    margin: 20px;
+    margin: 25px;
     width: 70%;
 }
 
@@ -97,6 +98,7 @@ body {
 
 .formHeader {
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .formInput {
@@ -105,11 +107,18 @@ body {
     width: 40%;
 }
 
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 input {
     display: flex;
     flex-direction: column;
     max-width: 220px;
-}
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    height: 25px;
+}    
 
 .rightBottom{
     flex: 1;
@@ -120,7 +129,7 @@ input {
     margin: 25px;
 }
 
-button{
+#btnSubmit{
     color:white;
     font-weight: bolder;
     width: 177px;
@@ -128,18 +137,29 @@ button{
     background-color: #596d48;
     border: 2px solid #596d48;
     border-radius: 7px;
+    box-shadow: 0px 4px 3px rgb(0 0 0 / 40%);
 }
 
-a{
+#btnSubmit:hover{
+    background-color: #404e34;
+    transform: scale(1.1); 
+}
+
+#btnSubmit:active{
+    background-color: #404e34;
+    transform: scale(1.05); 
+}
+
+#logIn{
     text-decoration: none;
     color:#596d48;
     font-weight: bolder;
 }
 
-
-
-
-
+#logIn:hover{
+    color: #404e34;
+    transform: scale(1.1);   
+}
 
 
 
@@ -152,6 +172,7 @@ a{
     .left {
         width: 100vw;
         height: 20vh;
+        padding-bottom: 40px;
     }
 
     .leftTop {
