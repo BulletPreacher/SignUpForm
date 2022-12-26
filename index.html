@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="leftTop">
+                <div class="banner">                  
+                    <img src="img/odin.png" id="odinPic">
+                    <h1 id="odinPicText">ODIN</h1>
+                </div>
+            </div>
+            <div class="dummy"></div>
+            <div class="dummy"></div>
+        </div>
+
+        <div class="right">
+            <div class="textContainer">
+                <p class="text1">Etiam scelerisque posuere urna quis scelerisque. Aliquam erat volutpat. Aliquam erat
+                    volutpat. Pellentesque vel nunc bibendum, venenatis nisi viverra, pulvinar nunc. Ut luctus, nibh
+                    vitae malesuada malesuada. Pellentesque vel nunc bibendum, venenatis nisi viverra, pulvinar nunc. Ut
+                    luctus, nibh
+                    vitae malesuada malesuada. </p>
+                <p class="text2">You know you want to</p>
+            </div>
+
+            <div class="formContainer">
+                <form id="myForm" action="index.html" method="post" class="form" onsubmit=" return verifyPass()">
+                    <div class="formLeft">
+
+                        <h2 class="formHeader">Lets do this</h2>
+                        <div class="formInput">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="firstName" required>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="lastName" required>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="user_email">Email</label>
+                            <input type="email" id="user_email" name="email" placeholder="you@example.com"  required>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="amount">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  required>
+                        </div>
+
+
+                        <div class="formInput">
+                            <label for="user_password1">Password</label>
+                            <input type="password" id="user_password1" name="password1" oninput="setCustomValidity('')" required>
+                        </div>
+
+                        <div class="formInput">
+                            <label for="user_password2">Confirm Password</label>
+                            <input type="password" id="user_password2" name="password2" oninput="setCustomValidity('')"  required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="rightBottom">
+                <div class="buttonContainer">
+                    <button id="btnSubmit" type="submit" form="myForm">Create Account</button>
+                    <p>Already have an account? <a href>Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
