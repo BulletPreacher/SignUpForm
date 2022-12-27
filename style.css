@@ -35,16 +35,28 @@ body {
     height: 150px;
     width: 37vw;
     background: rgba(12, 12, 12, 0.644);
+    animation-duration: 0.8s;
+    animation-name: animate-fade-left;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
 }
 
 #odinPic{
     height: 90%; 
+    animation-duration: 0.8s;
+    animation-name: animate-fade-in;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
 }
 
 #odinPicText{
     color: white;
     font-size: 6rem;
     font-family: 'OdinFont', sans-serif;
+    animation-duration: 0.8s;
+    animation-name: animate-fade-left;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
 }
 
 .dummy {
@@ -54,7 +66,7 @@ body {
 .right {
     display: flex;
     flex-direction: column;
-    background: blue;
+    background: rgb(255, 255, 255);
 }
 
 
@@ -85,6 +97,10 @@ body {
     font-size: 20px;
     box-shadow: -1px 5px 10px rgb(67 67 67 / 17%);
     z-index: 1;
+    animation-duration: 0.8s;
+    animation-name: animate-fade-down;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
 }
 
 .formLeft {
@@ -162,6 +178,43 @@ input {
 }
 
 
+  @keyframes animate-fade-in{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes animate-fade-left{
+    0% {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  @keyframes animate-fade-down {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+
+
+ 
 
 @media only screen and (max-width: 679px) {
     .container {
