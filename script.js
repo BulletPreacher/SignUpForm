@@ -6,8 +6,6 @@ function verifyPass() {
     var pass2 = document.getElementById("user_password2").value;
     if (pass1 !== pass2) {
         console.log("wrong")
-        console.log(pass1);
-        console.log(pass2);
         document.getElementById("user_password2").setCustomValidity("Passwords do not match");
         document.getElementById("user_password2").reportValidity();
         return false;
